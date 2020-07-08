@@ -1,3 +1,7 @@
+terraform {
+  backend "gcs" {}
+}
+
 locals {
   command_chomped              = chomp(var.command)
   command_when_destroy_chomped = chomp(var.command_when_destroy)
