@@ -15,7 +15,7 @@ variable "trigger" {
   default = ""
 }
 
-variable "environment" {
+variable "shell_environment" {
   type        = map(string)
   default     = {}
   description = "(Optional) Map of environment variables to pass to the command"
